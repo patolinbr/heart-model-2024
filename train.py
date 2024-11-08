@@ -4,7 +4,7 @@ from joblib import dump
 import pandas as pd
 import pathlib
 
-df = pd.read_csv(pathlib.Path('heart-disease.csv'))
+df = pd.read_csv(pathlib.Path('models/heart-disease.csv'))
 y = df.pop('target')
 X = df
 X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2)
